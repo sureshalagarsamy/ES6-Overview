@@ -149,3 +149,21 @@ var disp = ()=>console.log("Hello World")
 disp();
 ```
 
+# 4
+
+### Returning Multiple Values
+
+ES6 provides a array like syntax to assign multiple variables to values of array indexes ```destructuring feature```. It also lets you ignore some array indexes.
+
+```javascript
+function function_name()
+{
+    return [1, 6, 7, 4, 8, 0]; 
+}
+var q, w, e, r, t, y;
+//Here we are using ES6's array destructuring feature to assign the returned values to variables.
+//Here we are ignoring 2 and 4 array indexes
+[q, w, , r, , y] = function_name();
+
+alert(y);//y is 0
+```
