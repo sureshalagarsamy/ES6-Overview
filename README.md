@@ -167,3 +167,27 @@ var q, w, e, r, t, y;
 
 alert(y);//y is 0
 ```
+
+# 5
+
+### Default Function Arguments
+
+ES6 provides a new syntax that can be used to define default values to function parameters:
+
+```javascript
+function myFunction(x = 1, y = 2, z = 3)
+{
+	console.log(x, y, z); // Output "5 6 3"
+}
+myFunction(5,6);
+```
+
+Defaults can also be expressions. 
+
+```javascript
+function myFunction(x = 1, y = 2, z = 3 + 6)
+{
+	console.log(x, y, z); // Output "5 6 9"
+}
+myFunction(5,6);
+```
